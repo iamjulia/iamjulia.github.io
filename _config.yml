@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: Julia's Blog
+subtitle: Ruby n00by
+author: Julia Zhang
 simple_search: https://www.google.com/search
-description:
+description: Julia and Ruby's Excellent Adventure
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
