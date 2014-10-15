@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Julia's Blog]]></title>
+  <link href="http://iamjulia.github.io/atom.xml" rel="self"/>
+  <link href="http://iamjulia.github.io/"/>
+  <updated>2014-10-14T23:06:28-04:00</updated>
+  <id>http://iamjulia.github.io/</id>
+  <author>
+    <name><![CDATA[Julia Zhang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My First Post on Octopress]]></title>
+    <link href="http://iamjulia.github.io/blog/2014/10/14/my-first-post-on-octopress/"/>
+    <updated>2014-10-14T22:58:59-04:00</updated>
+    <id>http://iamjulia.github.io/blog/2014/10/14/my-first-post-on-octopress</id>
+    <content type="html"><![CDATA[<p>&ldquo;Hello World!&rdquo;</p>
+]]></content>
+  </entry>
+  
+</feed>
