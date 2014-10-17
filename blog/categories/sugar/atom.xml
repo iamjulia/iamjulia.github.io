@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sugar | Julia's Blog]]></title>
   <link href="http://iamjulia.github.io/blog/categories/sugar/atom.xml" rel="self"/>
   <link href="http://iamjulia.github.io/"/>
-  <updated>2014-10-17T00:31:39-04:00</updated>
+  <updated>2014-10-17T00:39:04-04:00</updated>
   <id>http://iamjulia.github.io/</id>
   <author>
     <name><![CDATA[Julia Zhang]]></name>
@@ -20,7 +20,7 @@
     <id>http://iamjulia.github.io/blog/2014/10/15/gimme-some-syntactic-sugar</id>
     <content type="html"><![CDATA[<p>As a beginner programmer, learning a new language can be scary and daunting. So, I was delighted to learn about &ldquo;syntactic sugar&rdquo;.</p>
 
-<p>The term &ldquo;syntactic sugar&rdquo; sounds sweet and inviting, and it is! It is syntax that does not follow the regular conventions and it makes for easier writing and reading of code. Ruby was designed with it&rsquo;s users in mind so it&rsquo;s syntax is rather natural and not much different from the way we actually speak at times. Syntactic sugar makes Ruby is more user (and beginner) friendly.</p>
+<p>The term &ldquo;syntactic sugar&rdquo; sounds sweet and inviting, and it is! It is syntax that does not follow the regular conventions and it makes for easier writing and reading of code. Ruby was designed with it&rsquo;s users in mind so its syntax is rather natural and not much different from the way we actually speak at times. Syntactic sugar makes Ruby (and other languages) more user (and beginner) friendly!</p>
 
 <p>Life with no sugar&hellip;</p>
 
