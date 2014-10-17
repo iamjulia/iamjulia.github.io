@@ -4,7 +4,7 @@
 
 url: http://iamjulia.github.io
 title: Julia's Blog
-subtitle: Puts "my thoughts here"
+subtitle: puts "my thoughts here"
 author: Julia Zhang
 simple_search: https://www.google.com/search
 description: Julia and Ruby's Excellent Adventure
