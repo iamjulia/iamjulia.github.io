@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://iamjulia.github.io/blog/2014/10/15/gimme-some-syntactic-sugar/</loc>
+    
+    <lastmod>2014-10-15T23:08:44-04:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://iamjulia.github.io/blog/2014/10/14/my-first-post-on-octopress/</loc>
     
     <lastmod>2014-10-14T22:58:59-04:00</lastmod>
@@ -13,14 +21,14 @@
   
   <url>
     <loc>http://iamjulia.github.io/blog/archives/</loc>
-    <lastmod>2014-10-15T22:49:41-04:00</lastmod>
+    <lastmod>2014-10-17T00:31:39-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://iamjulia.github.io/</loc>
-    <lastmod>2014-10-15T22:49:41-04:00</lastmod>
+    <lastmod>2014-10-17T00:31:39-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

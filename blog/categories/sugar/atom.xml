@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Julia's Blog]]></title>
-  <link href="http://iamjulia.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Sugar | Julia's Blog]]></title>
+  <link href="http://iamjulia.github.io/blog/categories/sugar/atom.xml" rel="self"/>
   <link href="http://iamjulia.github.io/"/>
   <updated>2014-10-17T00:31:39-04:00</updated>
   <id>http://iamjulia.github.io/</id>
@@ -24,29 +24,27 @@
 
 <p>Life with no sugar&hellip;</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="mf">2.</span><span class="o">+</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </span><span class='line'><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span>
-</span><span class='line'><span class="s">&quot;hello world&quot;</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="o">:</span><span class="n">capitalize</span><span class="p">)</span>
+</span><span class='line'><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">hello</span> <span class="n">world</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;.</span><span class="n">send</span><span class="p">(</span><span class="o">:</span><span class="n">capitalize</span><span class="p">)</span>
 </span><span class='line'><span class="n">a</span><span class="o">||</span><span class="n">a</span><span class="o">=</span><span class="n">b</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>A spoon full of sugar helps the code look much prettier&hellip;</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="mi">2</span><span class="o">+</span><span class="mi">5</span>
 </span><span class='line'><span class="n">x</span><span class="o">+=</span><span class="mi">1</span>
-</span><span class='line'><span class="s">&quot;hello world&quot;</span><span class="p">.</span><span class="n">capitalize</span>
+</span><span class='line'><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">hello</span> <span class="n">world</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;.</span><span class="n">capitalize</span>
 </span><span class='line'><span class="n">a</span><span class="o">||=</span><span class="n">b</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Wow, look how much clearer and &ldquo;more human&rdquo; the code looks with a touch of sugar!</p>
 
@@ -54,16 +52,7 @@
 
 <p>&ldquo;Syntactic sugar causes cancer of the semicolon.&rdquo; - Alan Perlis</p>
 
-<p><img src="http://i2.kym-cdn.com/photos/images/facebook/000/184/700/1318369988001.jpg"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My First Post on Octopress]]></title>
-    <link href="http://iamjulia.github.io/blog/2014/10/14/my-first-post-on-octopress/"/>
-    <updated>2014-10-14T22:58:59-04:00</updated>
-    <id>http://iamjulia.github.io/blog/2014/10/14/my-first-post-on-octopress</id>
-    <content type="html"><![CDATA[<p>&ldquo;Hello World!&rdquo;</p>
+<p><img class="<a" src="href="http://i2.kym-cdn.com/photos/images/facebook/000/184/700/1318369988001.jpg">http://i2.kym-cdn.com/photos/images/facebook/000/184/700/1318369988001.jpg</a>&#8221;></p>
 ]]></content>
   </entry>
   
