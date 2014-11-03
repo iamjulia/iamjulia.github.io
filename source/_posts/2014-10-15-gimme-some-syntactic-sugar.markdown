@@ -8,7 +8,7 @@ categories: "Syntactic sugar"
 
 As a beginner programmer, learning a new language can be scary and daunting. So, I was delighted to learn about "syntactic sugar". 
 
-The term "syntactic sugar" sounds sweet and inviting, and it is! It is syntax that does not follow the regular conventions and it makes for easier writing and reading of code. Ruby was designed with it's users in mind so it's syntax is rather natural and not much different from the way we actually speak at times. Syntactic sugar makes Ruby is more user (and beginner) friendly.
+The term "syntactic sugar" sounds sweet and inviting, and it is! It is syntax that does not follow the regular conventions and it makes for easier writing and reading of code. Ruby was designed with it's users in mind so its syntax is rather natural and not much different from the way we actually speak at times. Syntactic sugar makes Ruby (and other languages) more user (and beginner) friendly!
 
 Life with no sugar...
 

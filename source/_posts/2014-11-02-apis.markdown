@@ -1,0 +1,16 @@
+---
+layout: post
+title: "APIs"
+date: 2014-11-02 23:47:49 -0500
+comments: true
+categories: API
+---
+
+What is an API??
+
+Lately I’ve been hearing a lot about APIs - so I decided to look into what they really are and how they work. An API, short for Application Program Interface, is basically a set of instructions for building software application. The way I see it, APIs make life easier for programmers who make life easier for users of software applications.
+
+{% img http://cdn.meme.am/instances/500x/34938439.jpg %}
+
+
+Although APIs help enormously with improving the user experience on many websites, they are completely invisible to the user. The main job of an API is to allow software to interact with other software, they silently work their magic in the background while users only see a pretty user interface. 
