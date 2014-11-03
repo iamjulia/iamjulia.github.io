@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Api | Julia's Blog]]></title>
+  <link href="http://iamjulia.github.io/blog/categories/api/atom.xml" rel="self"/>
+  <link href="http://iamjulia.github.io/"/>
+  <updated>2014-11-02T23:54:05-05:00</updated>
+  <id>http://iamjulia.github.io/</id>
+  <author>
+    <name><![CDATA[Julia Zhang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[APIs]]></title>
+    <link href="http://iamjulia.github.io/blog/2014/11/02/apis/"/>
+    <updated>2014-11-02T23:47:49-05:00</updated>
+    <id>http://iamjulia.github.io/blog/2014/11/02/apis</id>
+    <content type="html"><![CDATA[<p>What is an API??</p>
+
+<p>Lately I’ve been hearing a lot about APIs - so I decided to look into what they really are and how they work. An API, short for Application Program Interface, is basically a set of instructions for building software application. The way I see it, APIs make life easier for programmers who make life easier for users of software applications.</p>
+
+<p><img class="<a" src="href="http://cdn.meme.am/instances/500x/34938439.jpg">http://cdn.meme.am/instances/500x/34938439.jpg</a>&#8221;></p>
+
+<p>Although APIs help enormously with improving the user experience on many websites, they are completely invisible to the user. The main job of an API is to allow software to interact with other software, they silently work their magic in the background while users only see a pretty user interface.</p>
+]]></content>
+  </entry>
+  
+</feed>
