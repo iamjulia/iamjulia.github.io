@@ -116,7 +116,7 @@
 
 <p>Upon receiving the HTML, the browser will tokenize, or convert strings into tokens. Adhering to the W3C HTML5 Standard, it will take strings inside brackets and create tokens, for example the <code>&lt;html&gt;</code> will be converted into an html token. Tokens look like: <code>start tag: html</code>,<code>start tag: body</code>, <code>start tag: h1</code>,<code>end tag: h1</code>, <code>start tag: p</code>, <code>end tag: p</code>,<code>end tag: body</code>, <code>end tag: html</code>. These tokens will be then converted into nodes by means of a lexer. A lexer is a type of parser. And from these nodes, a DOM tree will be constructed. The browser will be able to determine parents and children from the start and end tags. For example since the <code>start tag: body</code> is situated between the <code>start tag: html</code> and <code>end tag: html</code>, the browser will know that the <code>body</code> node is a child of the <code>html</code> node.</p>
 
-<p><img class="left" src="/images/DOM_tree.png" title="image" alt="images"></p>
+<p><img src="/images/DOM_tree.png" width="1024" height="768" title="DOM tree" alt="DOM"></p>
 </div>
   
   
