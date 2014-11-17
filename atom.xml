@@ -4,7 +4,7 @@
   <title><![CDATA[Julia's Blog]]></title>
   <link href="http://iamjulia.github.io/atom.xml" rel="self"/>
   <link href="http://iamjulia.github.io/"/>
-  <updated>2014-11-02T23:54:05-05:00</updated>
+  <updated>2014-11-16T22:18:18-05:00</updated>
   <id>http://iamjulia.github.io/</id>
   <author>
     <name><![CDATA[Julia Zhang]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Total DOMination]]></title>
+    <link href="http://iamjulia.github.io/blog/2014/11/16/total-domination/"/>
+    <updated>2014-11-16T18:24:43-05:00</updated>
+    <id>http://iamjulia.github.io/blog/2014/11/16/total-domination</id>
+    <content type="html"><![CDATA[<p>Last week at the Flatiron school, we took the dive into Javascript and jQuery to create more inactive and dynamic webpages. Javascript and jQuery interact with something called the DOM - the document object model. The DOM is a representation of HTML in a hierarchal tree-like structure, or an API for HTML. It allows javascript and jQuery to quickly find HTML elements. Every browser is able to generate a DOM, but how? Glad you asked…</p>
+
+<p>The first thing we will need to construct the DOM is some HTML.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;!</span><span class="n">DOCTYPE</span> <span class="n">html</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Hello</span> <span class="n">world</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Blah</span> <span class="n">blah</span> <span class="n">blah</span><span class="p">.</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Upon receiving the HTML, the browser will tokenize, or convert strings into tokens. Adhering to the W3C HTML5 Standard, it will take strings inside brackets and create tokens, for example the <code>&lt;html&gt;</code> will be converted into an html token. Tokens look like: <code>start tag: html</code>,<code>start tag: body</code>, <code>start tag: h1</code>,<code>end tag: h1</code>, <code>start tag: p</code>, <code>end tag: p</code>,<code>end tag: body</code>, <code>end tag: html</code>. These tokens will be then converted into nodes by means of a lexer. A lexer is a type of parser. And from these nodes, a DOM tree will be constructed. The browser will be able to determine parents and children from the start and end tags. For example since the <code>start tag: body</code> is situated between the <code>start tag: html</code> and <code>end tag: html</code>, the browser will know that the <code>body</code> node is a child of the <code>html</code> node.</p>
+
+<p><img class="left" src="http://iamjulia.github.io/images/DOM_tree.png" title="image" alt="images"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[APIs]]></title>
