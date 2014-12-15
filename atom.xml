@@ -4,7 +4,7 @@
   <title><![CDATA[Julia's Blog]]></title>
   <link href="http://iamjulia.github.io/atom.xml" rel="self"/>
   <link href="http://iamjulia.github.io/"/>
-  <updated>2014-11-16T22:29:27-05:00</updated>
+  <updated>2014-12-15T00:23:32-05:00</updated>
   <id>http://iamjulia.github.io/</id>
   <author>
     <name><![CDATA[Julia Zhang]]></name>
@@ -12,6 +12,78 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Rendering a Notice in Rails]]></title>
+    <link href="http://iamjulia.github.io/blog/2014/12/14/rendering-a-notice-in-rails/"/>
+    <updated>2014-12-14T23:31:08-05:00</updated>
+    <id>http://iamjulia.github.io/blog/2014/12/14/rendering-a-notice-in-rails</id>
+    <content type="html"><![CDATA[<p>Last week we had our science fair at the Flatiron School. It was nerve wracking, but an awesome and fun experience. The week prior was grueling. Whilst spending hours with my team building our app, I noticed something interesting about notices and errors.</p>
+
+<p>The first place I rendered a notice was in the Sessions Controller. It was plain and simple, no problem.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">destroy</span>
+</span><span class='line'>  <span class="n">session</span><span class="o">[</span><span class="ss">:user_id</span><span class="o">]</span> <span class="o">=</span> <span class="kp">nil</span>
+</span><span class='line'>  <span class="n">redirect_to</span> <span class="n">root_path</span><span class="p">,</span> <span class="ss">:notice</span> <span class="o">=&gt;</span> <span class="s2">&quot;You&#39;ve been signed out!&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Great! Onto the next message, an error in my Landings Controller:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>  <span class="vi">@user</span> <span class="o">=</span> <span class="no">User</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:user_id</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'>  <span class="vi">@landing</span> <span class="o">=</span> <span class="no">Landing</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">landing_params</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@landing</span><span class="o">.</span><span class="n">save</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">user_landing_path</span><span class="p">(</span><span class="vi">@user</span><span class="p">,</span> <span class="vi">@landing</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">render</span> <span class="s2">&quot;new&quot;</span><span class="p">,</span> <span class="ss">:error</span> <span class="o">=&gt;</span> <span class="s2">&quot;Please fill in all fields!&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But wait, this notice did not render. The render method doesn&rsquo;t take an alert/notice/error hash entry like the redirect_to method does. So, how do we make a flash appear on &ldquo;render&rdquo;?</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>  <span class="vi">@user</span> <span class="o">=</span> <span class="no">User</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:user_id</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'>  <span class="vi">@landing</span> <span class="o">=</span> <span class="no">Landing</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">landing_params</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@landing</span><span class="o">.</span><span class="n">save</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">user_landing_path</span><span class="p">(</span><span class="vi">@user</span><span class="p">,</span> <span class="vi">@landing</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">flash</span><span class="o">.</span><span class="n">now</span><span class="o">[</span><span class="ss">:error</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;Please fill in all fields!&quot;</span>
+</span><span class='line'>    <span class="n">render</span> <span class="s2">&quot;new&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Not too much hassel. We had to add one extra line before the render - <code>flash.now</code>. This makes the notice render on the current page.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Total DOMination]]></title>
