@@ -25,4 +25,4 @@ The first thing we will need to construct the DOM is some HTML.
 
 Upon receiving the HTML, the browser will tokenize, or convert strings into tokens. Adhering to the W3C HTML5 Standard, it will take strings inside brackets and create tokens, for example the `<html>` will be converted into an html token. Tokens look like: `start tag: html`,`start tag: body`, `start tag: h1`,`end tag: h1`, `start tag: p`, `end tag: p`,`end tag: body`, `end tag: html`. These tokens will be then converted into nodes by means of a lexer. A lexer is a type of parser. And from these nodes, a DOM tree will be constructed. The browser will be able to determine parents and children from the start and end tags. For example since the `start tag: body` is situated between the `start tag: html` and `end tag: html`, the browser will know that the `body` node is a child of the `html` node.
 
-{% img left /images/DOM_tree.png 'image' 'images' %}
+{% img /images/DOM_tree.png 1024 768 'DOM tree' 'DOM' %}
